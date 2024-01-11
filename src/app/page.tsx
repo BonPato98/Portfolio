@@ -11,19 +11,14 @@ export default function Home() {
       <a href="#contact" className="mx-2">Contacto</a>
     </nav>
     </header>
-    <main className="flex min-h-screen flex-col items-start justify-between p-24" id="start">
-      <section>
-      <article className="flex z-10 max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
+    <main className="min-h-screen" id="start">
+      <section className="flex flex-col items-start justify-between p-24">
+      <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
         <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
         <p className="text-4xl">Soy un Desarrollador Front End</p>
       </article>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="experience">
+      <section id="experience" className="bg-gray-800 flex flex-col items-start justify-between p-24">
         <h2>Experiencia</h2>
         <article>
           <header>Sobre mí</header>
@@ -39,12 +34,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="proyects">
+      <section id="proyects"  className="bg-gray-700 flex flex-col items-start justify-between p-24">
         <h2>Proyectos</h2>
         <article>
           <header>Pokedex - SoyHenry</header>
@@ -53,12 +43,7 @@ export default function Home() {
           <header>Auxie - SoyHenry</header>
         </article>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="contact">
+      <section id="contact"  className="bg-gray-600 flex flex-col items-start justify-between p-24">
         <h2>Ponte en contacto conmigo</h2>
         <form>
           <fieldset className="border border-white border-solid p-3">
