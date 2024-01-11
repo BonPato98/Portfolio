@@ -12,7 +12,7 @@ export default function Home() {
     </nav>
     </header>
     <main className="min-h-screen" id="start">
-      <section className="flex flex-col items-start justify-between p-24">
+      <section className="flex flex-col items-start justify-between bg-gray-950 p-24">
       <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
         <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
         <p className="text-4xl">Soy un Desarrollador Front End</p>
@@ -46,8 +46,8 @@ export default function Home() {
       <section id="contact"  className="bg-gray-600 flex flex-col items-start justify-between p-24">
         <h2>Ponte en contacto conmigo</h2>
         <form>
-          <fieldset className="border border-white border-solid p-3">
-            <legend>Información personal</legend>
+          <fieldset className="border-2 border-white border-solid p-3">
+            <legend className="font-bold text-purple-400 px-1">Información personal</legend>
             <label className="block m-3">
               *Nombre:
               <input className="text-black" type="text" id="name" name="name" placeholder="Tu nombre aquí" required/>
@@ -60,7 +60,7 @@ export default function Home() {
               Comentarios: <br />
               <input className="text-black" type="text" id="comments" name="comments" placeholder="Agrega información adicional"/>
             </label>
-            <button className="flex border border-white border-solid rounded font-bold hover:border-purple-500 p-1 hover:text-purple-500 hover:bg-white" type="submit">Enviar</button>
+            <button className="flex border-2 border-white border-solid rounded font-bold hover:border-purple-400 p-1 hover:text-purple-400 hover:bg-white" type="submit">Enviar</button>
           </fieldset>
         </form>
       </section>
