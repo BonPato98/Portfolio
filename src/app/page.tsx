@@ -1,4 +1,5 @@
-
+import Image from "next/image"
+import profilePic from "../imgs/perfil-cuadrado.jpg"
 
 export default function Home() {
   return (
@@ -12,11 +13,12 @@ export default function Home() {
     </nav>
     </header>
     <main className="h-max" id="start">
-      <section className="flex flex-col items-start justify-center bg-gray-950 px-32 h-screen">
+      <section className="flex items-center justify-center bg-gray-950 p-32 gap-x-32 h-screen">
       <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
         <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
         <p className="text-4xl">Soy un Desarrollador Front End</p>
       </article>
+      <Image src={profilePic} width={256} height={256} alt="imagen de perfil de Patricio Bonfigli" className="rounded-full"/>
       </section>
       <section id="experience" className="bg-gray-800 flex flex-col items-start justify-between p-24">
         <h2>Experiencia</h2>
