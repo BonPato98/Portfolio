@@ -11,8 +11,8 @@ export default function Home() {
       <a href="#contact" className="mx-2">Contacto</a>
     </nav>
     </header>
-    <main className="min-h-screen" id="start">
-      <section className="flex flex-col items-start justify-between bg-gray-950 p-24">
+    <main className="h-max" id="start">
+      <section className="flex flex-col items-start justify-center bg-gray-950 px-32 h-screen">
       <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
         <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
         <p className="text-4xl">Soy un Desarrollador Front End</p>
