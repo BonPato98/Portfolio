@@ -12,7 +12,7 @@ export default function Home() {
       <a href="#contact" className="mx-2">Contacto</a>
     </nav>
     </header>
-    <main className="h-max" id="start">
+    <main className="h-max divide-y divide-slate-400/25" id="start">
       <section className="flex items-center justify-center bg-gradient-to-b from-gray-950 to-gray-800 p-32 gap-x-32 h-screen">
       <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
         <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
@@ -20,12 +20,12 @@ export default function Home() {
       </article>
       <Image src={profilePic} width={256} height={256} alt="imagen de perfil de Patricio Bonfigli" className="rounded-full"/>
       </section>
-      <section id="aboutme" className="flex items-center justify-center bg-gray-800 bg-gradient-to-b from-gray-800 to-gray-700 p-32 gap-x-32 h-screen">
-        <article className="h-1/2 font-roboto text-base">
-          <h2 className="text-6xl font-bold">Sobre mí</h2>
-          <p className="text-2xs">lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum</p>
+      <section id="aboutme" className="flex items-center justify-center bg-gray-800 bg-gradient-to-b from-gray-800 to-gray-700 p-32 gap-x-12 h-screen">
+        <article className="h-1/2 font-roboto text-base w-1/3 shrink">
+          <h2 className="text-6xl font-bold ">Sobre mí</h2>
+          <p className="text-2xs">lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum</p>
         </article>
-        <aside className="h-1/2 font-roboto text-base">
+        <aside className="h-1/2 font-roboto text-base text-center w-1/3 shrink">
           <p className="text-4xl font-bold">Tecnologías</p>
           <ul>
             <li>JavaScript</li>
