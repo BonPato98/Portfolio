@@ -7,7 +7,7 @@ export default function Home() {
     <header className="relative">
     <nav className="fixed top-0 left-0 right-0 flex justify-center items-center bg-gray-900 h-16"> 
       <a href="#start" className="mx-2">Inicio</a>
-      <a href="#experience" className="mx-2">Experiencia</a>
+      <a href="#aboutme" className="mx-2">Sobre mí</a>
       <a href="#proyects" className="mx-2">Projectos</a>
       <a href="#contact" className="mx-2">Contacto</a>
     </nav>
@@ -20,14 +20,13 @@ export default function Home() {
       </article>
       <Image src={profilePic} width={256} height={256} alt="imagen de perfil de Patricio Bonfigli" className="rounded-full"/>
       </section>
-      <section id="experience" className="bg-gray-800 bg-gradient-to-b from-gray-800 to-gray-700 flex flex-col items-start justify-between p-24">
-        <h2>Experiencia</h2>
-        <article>
-          <header>Sobre mí</header>
-          <p>lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum</p>
+      <section id="aboutme" className="flex items-center justify-center bg-gray-800 bg-gradient-to-b from-gray-800 to-gray-700 p-32 gap-x-32 h-screen">
+        <article className="h-1/2 font-roboto text-base">
+          <h2 className="text-6xl font-bold">Sobre mí</h2>
+          <p className="text-2xs">lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum</p>
         </article>
-        <aside>
-          <p>Tecnologías</p>
+        <aside className="h-1/2 font-roboto text-base">
+          <p className="text-4xl font-bold">Tecnologías</p>
           <ul>
             <li>JavaScript</li>
             <li>React</li>
@@ -36,7 +35,7 @@ export default function Home() {
           </ul>
         </aside>
       </section>
-      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-between p-24">
+      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-between p-32 h-screen">
         <h2>Proyectos</h2>
         <article>
           <header>Pokedex - SoyHenry</header>
@@ -45,7 +44,7 @@ export default function Home() {
           <header>Auxie - SoyHenry</header>
         </article>
       </section>
-      <section id="contact"  className="bg-gray-600 flex flex-col items-start justify-between p-24">
+      <section id="contact"  className="bg-gray-600 flex flex-col items-start justify-between p-32 h-screen">
         <h2>Ponte en contacto conmigo</h2>
         <form>
           <fieldset className="border-2 border-white border-solid p-3">
