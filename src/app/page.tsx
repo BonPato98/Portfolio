@@ -2,6 +2,12 @@ import Image from "next/image"
 import profilePic from "../imgs/perfil-cuadrado.jpg"
 import githubLogo from "../imgs/github-logo.webp"
 import linkedinLogo from "../imgs/LinkedIn-logo.webp"
+import jsLogo from "../imgs/JS-logo.png"
+import reactLogo from "../imgs/React-logo.png"
+import nodeLogo from "../imgs/node-logo.png"
+import nextLogo from "../imgs/next-logo.png"
+import tailwindLogo from "../imgs/Tailwind-logo.png"
+import sassLogo from "../imgs/sass-logo.png"
 
 export default function Home() {
   return (
@@ -33,16 +39,23 @@ export default function Home() {
       <section id="aboutme" className="flex items-center justify-center bg-gray-800 bg-gradient-to-b from-gray-800 to-gray-700 p-32 gap-x-12 h-screen">
         <article className="h-1/2 font-roboto text-base w-1/3 shrink">
           <h2 className="text-6xl font-bold ">Sobre mí</h2>
-          <p className="text-2xs">lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum lore ipsum</p>
+          <br/>
+          <p className="text-2xs">
+            Soy un desarrollador web Full Stack, con preferencia por el FrontEnd. Tengo experiencia de 1 año trabajando en proyectos web, utilizando principalmente Javascript, React y Node.
+            Graduado de la escuela secundaria con un Bachiller en Artes Visuales. Poseo estudios en las carreras de Artes Digitales y Programación Informática en la Universidad Nacional de Quilmes.
+            Me considero una persona autodidacta, con interés en el aprendizaje constante de nuevas cosas.
+          </p>
         </article>
-        <aside className="h-1/2 font-roboto text-base text-center w-1/3 shrink">
-          <p className="text-4xl font-bold">Tecnologías</p>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Next.js</li>
-          </ul>
+        <aside className="grid grid-cols-2 gap-4 justify-items-center">
+          {/* <p className="text-4xl font-bold">Tecnologías</p> */}
+          {/* <div className="grid grid-cols-2 gap-3"> */}
+          <Image src={jsLogo} height={128} alt="JavaScript logo"/>
+          <Image src={reactLogo} height={128} alt="React.js logo"/>
+          <Image src={nodeLogo} height={128} alt="Node.js logo"/>
+          <Image src={nextLogo} height={128} alt="Next.js logo"/>
+          <Image src={tailwindLogo} height={128} alt="Tailwind logo"/>
+          <Image src={sassLogo} height={128} alt="Sass logo"/>
+          {/* </div> */}
         </aside>
       </section>
       <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-between p-32 h-screen">
