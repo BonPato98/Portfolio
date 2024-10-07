@@ -8,6 +8,7 @@ import nodeLogo from "../imgs/node-logo.png"
 import nextLogo from "../imgs/next-logo.png"
 import tailwindLogo from "../imgs/Tailwind-logo.png"
 import sassLogo from "../imgs/sass-logo.png"
+import Proyect from "../components/proyect"
 
 export default function Home() {
   return (
@@ -58,14 +59,12 @@ export default function Home() {
           {/* </div> */}
         </aside>
       </section>
-      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-between p-32 h-screen">
+      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-evenly p-32 h-screen">
         <h2>Proyectos</h2>
-        <article>
-          <header>Pokedex - SoyHenry</header>
-        </article>
-        <article>
-          <header>Auxie - SoyHenry</header>
-        </article>
+        <div className="grid grid-cols-3 gap-4">
+        <Proyect title="Pokedex - SoyHenry"/>
+        <Proyect title="Auxie - SoyHenry"/>
+        </div>
       </section>
       <section id="contact"  className="bg-gray-600 flex flex-col items-start justify-between p-32 h-screen">
         <h2>Ponte en contacto conmigo</h2>
