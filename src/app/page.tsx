@@ -59,9 +59,9 @@ export default function Home() {
           {/* </div> */}
         </aside>
       </section>
-      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 flex flex-col items-start justify-evenly p-32 h-screen">
-        <h2>Proyectos</h2>
-        <div className="grid grid-cols-3 gap-4">
+      <section id="proyects"  className="bg-gray-700 bg-gradient-to-b from-gray-700 to-gray-600 grid grid-rows-4 gap-12 justify-items-center p-32 h-screen">
+        <h2 className="font-bold text-6xl">Proyectos</h2>
+        <div className="grid grid-cols-2 gap-4">
         <Proyect title="Pokedex - SoyHenry"/>
         <Proyect title="Auxie - SoyHenry"/>
         </div>
