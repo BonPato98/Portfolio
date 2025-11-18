@@ -21,18 +21,22 @@ export default function Home() {
       <a href="#contact" className="mx-2">Contacto</a>
     </nav>
     </header>
-    <main className="h-max divide-y divide-slate-400/25" id="start">
+    <main className="h-max divide-y divide-slate-400/25 scroll-smooth" id="start">
       <section className="flex items-center justify-center bg-gradient-to-b from-gray-950 to-gray-800 p-32 gap-x-32 h-screen">
       <article className="flex max-w-5xl w-auto items-start justify-around gap-5 font-roboto text-base flex-col">
-        <h1 className="text-6xl font-bold leading-snug">Hola, me llamo <br /> <span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
-        <p className="text-4xl">Soy un Desarrollador Front End</p>
+        <h1 className="text-6xl font-bold leading-snug"><span className="text-purple-500">PATRICIO BONFIGLI</span></h1>
+        <p className="text-4xl">Desarrollador Front End</p>
         <div className="flex gap-x-6">
-          <a href="https://github.com/BonPato98" target="_blank">
-            <Image src={githubLogo} width={48} height={48} alt="github logo"/>
-          </a>
-          <a href="https://www.linkedin.com/in/bonfiglipatricio-1209/" target="_blank">
-            <Image src={linkedinLogo} width={48} height={48} alt="linkedin logo"/>
-          </a>
+          <button className="border rounded border-gray-800 bg-gradient-to-b from-gray-700 to-gray-800 shadow-md transition delay-100 duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-gray-900">
+            <a href="https://github.com/BonPato98" target="_blank">
+              <Image src={githubLogo} width={48} height={48} alt="github logo"/>
+            </a>
+          </button>
+          <button className="border rounded border-transparent shadow-md transition delay-100 duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-gray-900">
+            <a href="https://www.linkedin.com/in/bonfiglipatricio-1209/" target="_blank">
+              <Image src={linkedinLogo} width={48} height={48} alt="linkedin logo"/>
+            </a>
+          </button>
         </div>
       </article>
       <Image src={profilePic} width={256} height={256} alt="imagen de perfil de Patricio Bonfigli" className="rounded-full"/>
