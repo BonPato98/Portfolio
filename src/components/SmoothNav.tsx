@@ -30,7 +30,7 @@ const SmoothNav: React.FC = () => {
         <a
           key={item.href}
           href={item.href}
-          className="mx-2 cursor-pointer hover:bg-gray-700 px-3 py-0 transition-colors duration-200"
+          className="flex items-center cursor-pointer hover:bg-gray-700 px-6 h-full transition-colors duration-200"
           onClick={(e) => handleClick(e, item.href)}
         >
           {item.label}
